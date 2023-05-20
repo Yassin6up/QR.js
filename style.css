@@ -1,0 +1,77 @@
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  border: 5px solid black;
+  border-radius: 5px;
+  animation: colors 6s alternate infinite;
+  margin: 10px auto;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.pexels.com/photos/16377800/pexels-photo-16377800.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:10px ;
+ 
+}
+#btn{
+  background-color: purple;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: hidden;
+  cursor: pointer;
+  box-shadow: 3px 5px 3px rgb(35, 31, 35);
+  transition: .5s all;
+}
+#btn:hover{
+  box-shadow: none;
+}
+#url{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid purple;
+  outline: none;
+}
+#url:valid{
+  border-color: green;
+}
+#url:invalid{
+  border-color: rgb(229, 54, 54);
+}
+
+@keyframes colors{
+  0%{
+    border-color: rgb(255, 128, 0);
+    box-shadow: 0 0 50px  rgb(255, 128, 0) ;
+  }
+  15%{
+  border-color: yellow;
+  box-shadow: 0 0 50px  yellow ;
+  }
+  50%{
+  border-color: yellowgreen;
+  box-shadow: 0 0 50px  yellowgreen;
+  }
+  75%{
+  border-color: green;
+  box-shadow: 0 0 50px  green ;
+  }
+  100%{
+  border-color: skyblue;
+  box-shadow: 0 0 50px  skyblue ;
+  }
+}
