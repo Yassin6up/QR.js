@@ -4,9 +4,9 @@ let form = document.getElementById('form')
 let link  = document.getElementById('url')
 
 let img = document.getElementById('img')
-form.addEventListener('submit' , async(e)=>{
+form.addEventListener('submit' , (e)=>{
   e.preventDefault()
-  await img.setAttribute('src' ,"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="  + link.value )
+  img.setAttribute('src' ,"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="  + link.value )
   document.a[0].setAttribute("href" , link.value)
   document.a[0].click() ;
 })
