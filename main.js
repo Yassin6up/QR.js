@@ -10,5 +10,5 @@ form.addEventListener('submit' , (e)=>{
   document.getElementById("download").setAttribute("href" ,"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="  + link.value )
   document.getElementById("download").click() ;
   
-  // document.getElementById("imgdonloader").
+  document.getElementById("imgdonloader").setAttribute('src' ,"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="  + link.value )
 })
