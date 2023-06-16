@@ -46,6 +46,9 @@ form{
   border: 2px solid purple;
   outline: none;
 }
+#btnDown{
+display:none;
+}
 #url:valid{
   border-color: green;
 }
